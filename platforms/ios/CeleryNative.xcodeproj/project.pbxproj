@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+/* Begin PBXBuildFile section */
+		858B842D18CA22B800AB12DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 858B833A18CA111C00AB12DE /* InfoPlist.strings */; };
+		CD45EE7C18DC2D5800FB50C0 /* app in Resources */ = {isa = PBXBuildFile; fileRef = CD45EE7A18DC2D5800FB50C0 /* app */; };
+		CD62955D1BB2678900AE3A93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62955C1BB2678900AE3A93 /* main.m */; };
+		7C912F13157F41C78BD7050F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DD9CE67906147E5BCDACAAC /* Default-568h@2x.png */; };
+		37092F9AF1DD41EDB229944A /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = FE2506A629244F458739F055 /* Default-Landscape.png */; };
+		96640A01EA05477D82B4F73A /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A508B6F6AD43839165571E /* Default-Landscape@2x.png */; };
+		E04E4EF18BF7442D96F3D88A /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = B7CBE64EBC554FE7A71FFE5C /* Default-Portrait.png */; };
+		8F22C0E6D47348B5968E5FF5 /* Default-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D61F677E1446D1A546D9AA /* Default-Portrait@2x.png */; };
+		BD190090E6A54938B0C1B9C4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 023A3DEA7F6A4A31A0FC3A3B /* Default.png */; };
+		77C56CC7C6E14CFE9154E598 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E46C619107449DB9EF202E1 /* Default@2x.png */; };
+		B1BB1132F1144766952B156C /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E5806831BF54B018651B9FE /* Icon-Small-50.png */; };
+		436974A939004955B4FDA303 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC55FD69BF9F4E57A6F187BF /* Icon-Small-50@2x.png */; };
+		FBB90226B8A542EFAEEBB83E /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD1E48AFA1E464B87F866D1 /* Icon-Small.png */; };
+		0C113F12DE2C40DBB3DC0A05 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0056EBBDB47F41329C6D7207 /* Icon-Small@2x.png */; };
+		AB8C14325B1D47BDAF5E92A0 /* icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = B7FCE4C0FBE442CEA0DCE74C /* icon-40.png */; };
+		C898FFD19EB44D579109BBA2 /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CAACECD8C746159DC16807 /* icon-40@2x.png */; };
+		F728F228C07548B68B50909D /* icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EF2FDAB66ED4B79A22D35D8 /* icon-60.png */; };
+		FB0AB5F5DE5A4BC1AABDA397 /* icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A0395647B6D4EC08F7FD412 /* icon-60@2x.png */; };
+		841EAB5608FA4C608533A723 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = C40827332C6A43ED9C93B88D /* icon-72.png */; };
+		6EB505FD8D1A49AE83804F24 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB93E596B03444AF9BAA93A8 /* icon-72@2x.png */; };
+		F9E163864D8F42BC9DFB2604 /* icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E46D4FB47048FB8FBE6513 /* icon-76.png */; };
+		1EBA79F9DFF24BDA9DF97BB2 /* icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4088ECFC708E4A449E3CA220 /* icon-76@2x.png */; };
+		B6BCD7ED782442CF8CE9CC4F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B2BD8FEF6D044C3975B4092 /* icon.png */; };
+		370ABDEC83314D488D1F10E5 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B8F1B2D1A4B4E7580C1E329 /* icon@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		85F5BDFC1A9363BE006B9701 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		858B832E18CA111C00AB12DE /* CeleryNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CeleryNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		858B833918CA111C00AB12DE /* CeleryNative-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CeleryNative-Info.plist"; sourceTree = "<group>"; };
+		858B833B18CA111C00AB12DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		858B833F18CA111C00AB12DE /* CeleryNative-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CeleryNative-Prefix.pch"; sourceTree = "<group>"; };
+		858B843318CA22B800AB12DE /* CeleryNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CeleryNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD45EE7A18DC2D5800FB50C0 /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; path = app; sourceTree = "<group>"; };
+		CD62955C1BB2678900AE3A93 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = internal/main.m; sourceTree = SOURCE_ROOT; };
+		CDD59A261BB43B5D00EC2671 /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "build-debug.xcconfig"; sourceTree = "<group>"; };
+		CDD59A271BB43B5D00EC2671 /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "build-release.xcconfig"; sourceTree = "<group>"; };
+		CDF4743E1BA4855C0087EA85 /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = build.xcconfig; sourceTree = "<group>"; };
+		F9B8C6A31ACEDEEB00547416 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4DD9CE67906147E5BCDACAAC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "CeleryNative/Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
+		FE2506A629244F458739F055 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape.png"; path = "CeleryNative/Resources/Default-Landscape.png"; sourceTree = "<group>"; };
+		C5A508B6F6AD43839165571E /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x.png"; path = "CeleryNative/Resources/Default-Landscape@2x.png"; sourceTree = "<group>"; };
+		B7CBE64EBC554FE7A71FFE5C /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait.png"; path = "CeleryNative/Resources/Default-Portrait.png"; sourceTree = "<group>"; };
+		E7D61F677E1446D1A546D9AA /* Default-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x.png"; path = "CeleryNative/Resources/Default-Portrait@2x.png"; sourceTree = "<group>"; };
+		023A3DEA7F6A4A31A0FC3A3B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "CeleryNative/Resources/Default.png"; sourceTree = "<group>"; };
+		8E46C619107449DB9EF202E1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "CeleryNative/Resources/Default@2x.png"; sourceTree = "<group>"; };
+		7E5806831BF54B018651B9FE /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "CeleryNative/Resources/Icon-Small-50.png"; sourceTree = "<group>"; };
+		CC55FD69BF9F4E57A6F187BF /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50@2x.png"; path = "CeleryNative/Resources/Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		4BD1E48AFA1E464B87F866D1 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "CeleryNative/Resources/Icon-Small.png"; sourceTree = "<group>"; };
+		0056EBBDB47F41329C6D7207 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "CeleryNative/Resources/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		B7FCE4C0FBE442CEA0DCE74C /* icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-40.png"; path = "CeleryNative/Resources/icon-40.png"; sourceTree = "<group>"; };
+		32CAACECD8C746159DC16807 /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-40@2x.png"; path = "CeleryNative/Resources/icon-40@2x.png"; sourceTree = "<group>"; };
+		3EF2FDAB66ED4B79A22D35D8 /* icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-60.png"; path = "CeleryNative/Resources/icon-60.png"; sourceTree = "<group>"; };
+		3A0395647B6D4EC08F7FD412 /* icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-60@2x.png"; path = "CeleryNative/Resources/icon-60@2x.png"; sourceTree = "<group>"; };
+		C40827332C6A43ED9C93B88D /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72.png"; path = "CeleryNative/Resources/icon-72.png"; sourceTree = "<group>"; };
+		DB93E596B03444AF9BAA93A8 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72@2x.png"; path = "CeleryNative/Resources/icon-72@2x.png"; sourceTree = "<group>"; };
+		34E46D4FB47048FB8FBE6513 /* icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-76.png"; path = "CeleryNative/Resources/icon-76.png"; sourceTree = "<group>"; };
+		4088ECFC708E4A449E3CA220 /* icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-76@2x.png"; path = "CeleryNative/Resources/icon-76@2x.png"; sourceTree = "<group>"; };
+		6B2BD8FEF6D044C3975B4092 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = "CeleryNative/Resources/icon.png"; sourceTree = "<group>"; };
+		4B8F1B2D1A4B4E7580C1E329 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "CeleryNative/Resources/icon@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		858B83F418CA22B800AB12DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		858B832518CA111C00AB12DE = {
+			isa = PBXGroup;
+			children = (
+				E070579D1B39A9D000214BF1 /* Resources */,
+				858B833718CA111C00AB12DE /* CeleryNative */,
+				858B833018CA111C00AB12DE /* Frameworks */,
+				858B832F18CA111C00AB12DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		858B832F18CA111C00AB12DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				858B832E18CA111C00AB12DE /* CeleryNative.app */,
+				858B843318CA22B800AB12DE /* CeleryNative.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		858B833018CA111C00AB12DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		858B833718CA111C00AB12DE /* CeleryNative */ = {
+			isa = PBXGroup;
+			children = (
+				CD45EE7A18DC2D5800FB50C0 /* app */,
+				F9B8C6A21ACEDEEB00547416 /* LaunchScreen.xib */,
+				858B833818CA111C00AB12DE /* Supporting Files */,
+			);
+			path = CeleryNative;
+			sourceTree = "<group>";
+		};
+		858B833818CA111C00AB12DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDF4743E1BA4855C0087EA85 /* build.xcconfig */,
+				CDD59A261BB43B5D00EC2671 /* build-debug.xcconfig */,
+				CDD59A271BB43B5D00EC2671 /* build-release.xcconfig */,
+				858B833918CA111C00AB12DE /* CeleryNative-Info.plist */,
+				858B833A18CA111C00AB12DE /* InfoPlist.strings */,
+				CD62955C1BB2678900AE3A93 /* main.m */,
+				858B833F18CA111C00AB12DE /* CeleryNative-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E070579D1B39A9D000214BF1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4DD9CE67906147E5BCDACAAC /* Default-568h@2x.png */,
+				FE2506A629244F458739F055 /* Default-Landscape.png */,
+				C5A508B6F6AD43839165571E /* Default-Landscape@2x.png */,
+				B7CBE64EBC554FE7A71FFE5C /* Default-Portrait.png */,
+				E7D61F677E1446D1A546D9AA /* Default-Portrait@2x.png */,
+				023A3DEA7F6A4A31A0FC3A3B /* Default.png */,
+				8E46C619107449DB9EF202E1 /* Default@2x.png */,
+				7E5806831BF54B018651B9FE /* Icon-Small-50.png */,
+				CC55FD69BF9F4E57A6F187BF /* Icon-Small-50@2x.png */,
+				4BD1E48AFA1E464B87F866D1 /* Icon-Small.png */,
+				0056EBBDB47F41329C6D7207 /* Icon-Small@2x.png */,
+				B7FCE4C0FBE442CEA0DCE74C /* icon-40.png */,
+				32CAACECD8C746159DC16807 /* icon-40@2x.png */,
+				3EF2FDAB66ED4B79A22D35D8 /* icon-60.png */,
+				3A0395647B6D4EC08F7FD412 /* icon-60@2x.png */,
+				C40827332C6A43ED9C93B88D /* icon-72.png */,
+				DB93E596B03444AF9BAA93A8 /* icon-72@2x.png */,
+				34E46D4FB47048FB8FBE6513 /* icon-76.png */,
+				4088ECFC708E4A449E3CA220 /* icon-76@2x.png */,
+				6B2BD8FEF6D044C3975B4092 /* icon.png */,
+				4B8F1B2D1A4B4E7580C1E329 /* icon@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		858B83EF18CA22B800AB12DE /* CeleryNative */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 858B843018CA22B800AB12DE /* Build configuration list for PBXNativeTarget "CeleryNative" */;
+			buildPhases = (
+				C97FD7AC1ADE5369004DB2A4 /* NativeScript PreBuild */,
+				858B83F218CA22B800AB12DE /* Sources */,
+				CD62955B1BB2651D00AE3A93 /* NativeScript PreLink */,
+				858B83F418CA22B800AB12DE /* Frameworks */,
+				858B842C18CA22B800AB12DE /* Resources */,
+				85F5BDFC1A9363BE006B9701 /* Embed Frameworks */,
+				CD3EAD351B05FF060042DBFC /* NativeScript PostBuild */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CeleryNative;
+			productName = JDBridgeApp;
+			productReference = 858B843318CA22B800AB12DE /* CeleryNative.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		858B832618CA111C00AB12DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TNS;
+				LastUpgradeCheck = 500;
+				ORGANIZATIONNAME = Telerik;
+			};
+			buildConfigurationList = 858B832918CA111C00AB12DE /* Build configuration list for PBXProject "CeleryNative" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 858B832518CA111C00AB12DE;
+			productRefGroup = 858B832F18CA111C00AB12DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				858B83EF18CA22B800AB12DE /* CeleryNative */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		858B842C18CA22B800AB12DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD45EE7C18DC2D5800FB50C0 /* app in Resources */,
+				858B842D18CA22B800AB12DE /* InfoPlist.strings in Resources */,
+				7C912F13157F41C78BD7050F /* Default-568h@2x.png in Resources */,
+				37092F9AF1DD41EDB229944A /* Default-Landscape.png in Resources */,
+				96640A01EA05477D82B4F73A /* Default-Landscape@2x.png in Resources */,
+				E04E4EF18BF7442D96F3D88A /* Default-Portrait.png in Resources */,
+				8F22C0E6D47348B5968E5FF5 /* Default-Portrait@2x.png in Resources */,
+				BD190090E6A54938B0C1B9C4 /* Default.png in Resources */,
+				77C56CC7C6E14CFE9154E598 /* Default@2x.png in Resources */,
+				B1BB1132F1144766952B156C /* Icon-Small-50.png in Resources */,
+				436974A939004955B4FDA303 /* Icon-Small-50@2x.png in Resources */,
+				FBB90226B8A542EFAEEBB83E /* Icon-Small.png in Resources */,
+				0C113F12DE2C40DBB3DC0A05 /* Icon-Small@2x.png in Resources */,
+				AB8C14325B1D47BDAF5E92A0 /* icon-40.png in Resources */,
+				C898FFD19EB44D579109BBA2 /* icon-40@2x.png in Resources */,
+				F728F228C07548B68B50909D /* icon-60.png in Resources */,
+				FB0AB5F5DE5A4BC1AABDA397 /* icon-60@2x.png in Resources */,
+				841EAB5608FA4C608533A723 /* icon-72.png in Resources */,
+				6EB505FD8D1A49AE83804F24 /* icon-72@2x.png in Resources */,
+				F9E163864D8F42BC9DFB2604 /* icon-76.png in Resources */,
+				1EBA79F9DFF24BDA9DF97BB2 /* icon-76@2x.png in Resources */,
+				B6BCD7ED782442CF8CE9CC4F /* icon.png in Resources */,
+				370ABDEC83314D488D1F10E5 /* icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C97FD7AC1ADE5369004DB2A4 /* NativeScript PreBuild */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "NativeScript PreBuild";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/internal/nativescript-pre-build\"";
+			showEnvVarsInLog = 0;
+		};
+		CD3EAD351B05FF060042DBFC /* NativeScript PostBuild */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "NativeScript PostBuild";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/internal/nativescript-post-build\"";
+			showEnvVarsInLog = 0;
+		};
+		CD62955B1BB2651D00AE3A93 /* NativeScript PreLink */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "NativeScript PreLink";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/internal/nativescript-pre-link\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		858B83F218CA22B800AB12DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD62955D1BB2678900AE3A93 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		858B833A18CA111C00AB12DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				858B833B18CA111C00AB12DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F9B8C6A21ACEDEEB00547416 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9B8C6A31ACEDEEB00547416 /* en */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		858B835818CA111C00AB12DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Debug;
+		};
+		858B835918CA111C00AB12DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Release;
+		};
+		858B843118CA22B800AB12DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD59A261BB43B5D00EC2671 /* build-debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_MODULES_AUTOLINK = NO;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CeleryNative/CeleryNative-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/CeleryNative/CeleryNative-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = CeleryNative;
+				VALID_ARCHS = "armv7 arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		858B843218CA22B800AB12DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD59A271BB43B5D00EC2671 /* build-release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_MODULES_AUTOLINK = NO;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CeleryNative/CeleryNative-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/CeleryNative/CeleryNative-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = CeleryNative;
+				VALID_ARCHS = "armv7 arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		858B832918CA111C00AB12DE /* Build configuration list for PBXProject "CeleryNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				858B835818CA111C00AB12DE /* Debug */,
+				858B835918CA111C00AB12DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		858B843018CA22B800AB12DE /* Build configuration list for PBXNativeTarget "CeleryNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				858B843118CA22B800AB12DE /* Debug */,
+				858B843218CA22B800AB12DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 858B832618CA111C00AB12DE /* Project object */;
+}
