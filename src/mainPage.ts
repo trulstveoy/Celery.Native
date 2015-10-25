@@ -1,6 +1,6 @@
-import observable = require("data/observable");
-import pages = require("ui/page");
-import vmModule = require("./main-view-model");
+import * as observable from 'data/observable';
+import * as pages from 'ui/page';
+import * as vmModule from './mainViewModel';
 
 // Event handler for Page "loaded" event attached in main-page.xml
 export function pageLoaded(args: observable.EventData) {

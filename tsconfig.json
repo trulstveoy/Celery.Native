@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
-    "declarationFiles": false,
-    "noExternalResolve": true,
     "target": "es5",
     "module": "commonjs",
-    "experimentalDecorators": false,
-    "emitDecoratorMetadata": false,
+    "noImplicitAny": false,
+    "noLib": false,
+    "declaration": false,
     "sourceMap": false
   }
 }

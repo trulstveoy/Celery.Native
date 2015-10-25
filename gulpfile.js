@@ -6,13 +6,19 @@ var changed = require('gulp-changed');
 
 var tsProject = ts.createProject('tsconfig.json');
 
+gulp.task('move', function(){
+  return gulp.src(['src/**/*', '!src/**/*.ts'])
+    .pipe(changed('app'))
+    .pipe(gulp.dest('app'));    
+});
+
 gulp.task('clean', function () {
     return del([
-      'app/**/*.js'
+      'app/**/*'
     ]);
 });
 
-gulp.task('build', function () {
+gulp.task('build-system', function () {
     return gulp.src(['src/**/*', 'app'])
       .pipe(plumber())
       .pipe(changed('app', { extension: '.ts' }))
@@ -20,9 +26,13 @@ gulp.task('build', function () {
       .pipe(gulp.dest('app'));
 });
 
+gulp.task('build', ['move', 'build-system']);
+
 function reportChange(event){
   console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
 }
+
+
 
 gulp.task('watch', function() {
   gulp.watch('src/**/*.ts', ['build']).on('change', reportChange);  

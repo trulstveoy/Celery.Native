@@ -9,7 +9,7 @@ var HelloWorldModel = (function (_super) {
     function HelloWorldModel() {
         _super.call(this);
         // Initialize default values.
-        this.counter = 45;
+        this.counter = 47;
         this.set("message", this.counter + " taps left");
     }
     HelloWorldModel.prototype.tapAction = function () {

@@ -1,4 +1,3 @@
-define(["require", "exports", "application"], function (require, exports, application) {
-    application.mainModule = "./main-page";
-    application.start();
-});
+var application = require('application');
+application.mainModule = "./main-page";
+application.start();

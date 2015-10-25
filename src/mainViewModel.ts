@@ -1,4 +1,4 @@
-import observable = require("data/observable");
+import * as observable from "data/observable";
 
 export class HelloWorldModel extends observable.Observable {
     private counter: number;
@@ -6,7 +6,7 @@ export class HelloWorldModel extends observable.Observable {
         super();
 
         // Initialize default values.
-        this.counter = 45;
+        this.counter = 48;
         this.set("message", this.counter + " taps left");
     }
 
