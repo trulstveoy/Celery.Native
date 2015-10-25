@@ -35,5 +35,5 @@ function reportChange(event){
 
 
 gulp.task('watch', function() {
-  gulp.watch('src/**/*.ts', ['build']).on('change', reportChange);  
+  gulp.watch('src/**/*', ['build']).on('change', reportChange);  
 });

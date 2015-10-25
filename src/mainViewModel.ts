@@ -1,6 +1,6 @@
 import * as observable from "data/observable";
 
-export class HelloWorldModel extends observable.Observable {
+export class MainViewModel extends observable.Observable {
     private counter: number;
     constructor() {
         super();
@@ -20,4 +20,4 @@ export class HelloWorldModel extends observable.Observable {
         }
     }
 }
-export var mainViewModel = new HelloWorldModel();
+export var mainViewModel = new MainViewModel();

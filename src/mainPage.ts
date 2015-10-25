@@ -2,7 +2,7 @@ import * as observable from 'data/observable';
 import * as pages from 'ui/page';
 import * as vmModule from './mainViewModel';
 
-// Event handler for Page "loaded" event attached in main-page.xml
+// Event handler for Page "loaded" event attached in mainPage.xml
 export function pageLoaded(args: observable.EventData) {
     // Get the event sender
     var page = <pages.Page>args.object;
