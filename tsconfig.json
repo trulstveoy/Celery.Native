@@ -5,6 +5,7 @@
     "noImplicitAny": false,
     "noLib": false,
     "declaration": false,
-    "sourceMap": false
+    "sourceMap": false,
+    "isolatedModules": true
   }
 }

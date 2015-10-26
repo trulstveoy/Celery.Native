@@ -17,9 +17,8 @@ export class MainViewModel extends observable.Observable {
             });
            
         });
-        
-        const s = 'foo';
-        console.log(s);
+        const foo;
+        console.log('foo');
         
         this.set('searchText', '');
     }

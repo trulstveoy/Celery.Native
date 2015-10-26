@@ -19,20 +19,18 @@ gulp.task('clean', function () {
 });
 
 gulp.task('build-system', function () {
-    return gulp.src('src/**/*')
+    return gulp.src(['src/**/*.ts', 'dts/**/*.d.ts'])
       .pipe(plumber())
-      .pipe(changed('app'))
-      .pipe(ts(tsProject)).js
+      .pipe(changed('app', {extension: '.js'}))
+      .pipe(ts(tsProject))
       .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['move', 'build-system']);
+gulp.task('build', ['build-system', 'move']);
 
 function reportChange(event){
   console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
 }
-
-
 
 gulp.task('watch', function() {
   gulp.watch('src/**/*', ['build']).on('change', reportChange);  
