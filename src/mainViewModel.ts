@@ -6,6 +6,8 @@ export class MainViewModel extends observable.Observable {
     private counter: number;
     constructor() {
         super();  
+        
+        this.set('items', [1,2,3,4]);
     }
     
     public onSearch() {        
