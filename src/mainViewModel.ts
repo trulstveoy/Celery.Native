@@ -1,36 +1,22 @@
 import * as observable from 'data/observable';
+import * as searchBarModule from 'ui/search-bar';
 import * as http from 'http';
 
 export class MainViewModel extends observable.Observable {
     private counter: number;
     constructor() {
-        super();       
-        
-        this.on(observable.Observable.propertyChangeEvent, data => {
-            
-            const url = 'http://celery.azurewebsites.net/api/food/?query=' + (<any>data.object).searchText;
-            
-            http.getJSON(url).then(json => {
-                this.set('output', json);
-            }, e => {
-               this.set('output', e);
-            });
-           
-        });
-        const foo;
-        console.log('foo');
-        
-        this.set('searchText', '');
+        super();  
     }
-
-    // public tapAction() {
-    //     this.counter--;
-    //     if (this.counter <= 0) {
-    //         this.set("message", "Hoorraaay! You unlocked the NativeScript clicker achievement!");
-    //     }
-    //     else {
-    //         this.set("message", this.counter + " taps left")
-    //     }
-    // }
+    
+    public onSearch() {        
+        const searchText = this.get('searchText');        
+        const url = 'http://celery.azurewebsites.net/api/food/?query=' + searchText;
+            
+        http.getJSON(url).then(json => {
+            this.set('output', json);
+        }, e => {
+           this.set('output', e);
+        });
+    }    
 }
 export var mainViewModel = new MainViewModel();

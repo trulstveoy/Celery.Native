@@ -18,8 +18,6 @@ var MainViewModel = (function (_super) {
                 _this.set('output', e);
             });
         });
-        var s = 'foo';
-        console.log(s);
         this.set('searchText', '');
     }
     return MainViewModel;

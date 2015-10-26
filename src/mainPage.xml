@@ -2,7 +2,8 @@
   <StackLayout>
     
     <Label text="Search" cssClass="title"/>
-    <TextField text="{{searchText}}" cssClass="input"/>  
+    <SearchBar text="{{ searchText }}" cssClass="search" submit="{{ onSearch }}" />
+    <!--<TextField text="{{searchText}}" cssClass="input"/>  -->
     <Label text="{{ searchText }}" cssClass="message"/>    
     
     <Label text="{{ output }}" cssClass="message"/>

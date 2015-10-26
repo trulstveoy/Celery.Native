@@ -8,11 +8,10 @@
     margin:20;
 }
 
-.input{    
-    border-width: 1;
-    border-color: #3C5B45;
-    horizontal-align: center;
-    width: 200;
+.search{    
+    
+    background-color: #CED9BC;
+        
 }
 
 button {
