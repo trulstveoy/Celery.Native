@@ -1,4 +1,8 @@
 {
+  "name": "Celery.Native",
+    "version": "1.0.0",
+    "main": "./app/app.js",
+    "typings": "./dts/**/*.d.ts",
   "nativescript": {
     "id": "org.nativescript.Celery",
     "tns-ios": {

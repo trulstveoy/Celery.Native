@@ -1,3 +1,3 @@
-var application = require("application");
-application.mainModule = "app/main-page";
+var application = require('application');
+application.mainModule = "./mainPage";
 application.start();

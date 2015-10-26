@@ -19,9 +19,9 @@ gulp.task('clean', function () {
 });
 
 gulp.task('build-system', function () {
-    return gulp.src(['src/**/*', 'app'])
+    return gulp.src('src/**/*')
       .pipe(plumber())
-      .pipe(changed('app', { extension: '.ts' }))
+      .pipe(changed('app'))
       .pipe(ts(tsProject)).js
       .pipe(gulp.dest('app'));
 });
