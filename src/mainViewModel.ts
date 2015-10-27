@@ -10,7 +10,7 @@ export class MainViewModel extends observable.Observable {
         super();   
     }
     
-    public onSearch() {                
+    onSearch() {                
         const searchText = this.get('searchText');        
         const url = 'http://celery.azurewebsites.net/api/food/?query=' + searchText;
             
@@ -19,6 +19,11 @@ export class MainViewModel extends observable.Observable {
         }, e => {
            this.set('output', e);
         });
+    }
+    
+    clearSearch(){
+        this.items.splice(0);
+        this.set('output', 'clear');
     }    
 }
 export var mainViewModel = new MainViewModel();

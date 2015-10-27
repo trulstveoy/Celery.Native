@@ -3,7 +3,7 @@
     
     
     <Label text="Search" cssClass="title"/>
-    <SearchBar text="{{searchText}}" cssClass="search" submit="{{onSearch}}" />
+    <SearchBar text="{{searchText}}" cssClass="search" submit="{{onSearch}}" clear="{{clearSearch}}" />
     
     <Label text="{{searchText}}" cssClass="message"/>    
     
