@@ -1,13 +1,19 @@
 <Page xmlns="http://www.nativescript.org/tns.xsd" cssClass="page" loaded="pageLoaded">
   <StackLayout>
     
-    <Label text="Search" cssClass="title"/>
-    <SearchBar text="{{ searchText }}" cssClass="search" submit="{{ onSearch }}" />
-    <!--<TextField text="{{searchText}}" cssClass="input"/>  -->
-    <Label text="{{ searchText }}" cssClass="message"/>    
     
-    <Label text="{{ output }}" cssClass="message"/>
-    <ListView item={{ items }}/>
+    <Label text="Search" cssClass="title"/>
+    <SearchBar text="{{searchText}}" cssClass="search" submit="{{onSearch}}" />
+    
+    <Label text="{{searchText}}" cssClass="message"/>    
+    
+    <Label text="{{output}}" cssClass="message"/>
+    
+    <ListView items="{{items}}">
+            <ListView.itemTemplate>
+                    <Label text="{{name}}" />
+            </ListView.itemTemplate>
+    </ListView>
     
     <!--<Label text="Tap the button" cssClass="message"/>
     <Button text="TAP" tap="{{ tapAction }}" />
