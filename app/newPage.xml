@@ -1,4 +1,4 @@
-<Page xmlns="http://www.nativescript.org/tns.xsd" cssClass="page" loaded="pageLoaded">
+<Page xmlns="http://www.nativescript.org/tns.xsd" cssClass="page">
   <StackLayout>
     <Label text="Hello world" />
     

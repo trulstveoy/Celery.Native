@@ -32,6 +32,10 @@ class MainPageModel extends Observable {
     moveAction(){
         this.topmost.navigate('newPage');
     }
+    
+    listViewItemTap(){
+        this.topmost.navigate('newPage');
+    }
 }
 
 export function pageLoaded(args: EventData) {    

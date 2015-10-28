@@ -9,7 +9,7 @@ class NewPageModel extends Observable {
     }
 }
 
-export function pageLoaded(args: EventData) {    
+export function pageNavigatedTo(args: observable.EventData) {
     var page = <Page>args.object;
     page.bindingContext = new NewPageModel();
 }
