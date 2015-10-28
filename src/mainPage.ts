@@ -1,10 +1,8 @@
-import * as observable from 'data/observable';
-import * as pages from 'ui/page';
-import * as vmModule from './mainViewModel';
+import {EventData} from 'data/observable';
+import {Page} from 'ui/page';
+import MainPageModel from './mainPageModel';
 
-// Event handler for Page "loaded" event attached in mainPage.xml
-export function pageLoaded(args: observable.EventData) {
-    // Get the event sender
-    var page = <pages.Page>args.object;
-    page.bindingContext = vmModule.mainViewModel;
+export function pageLoaded(args: EventData) {    
+    var page = <Page>args.object;
+    page.bindingContext = new MainPageModel();
 }

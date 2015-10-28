@@ -1,10 +1,10 @@
-import * as observable from 'data/observable';
+import {Observable} from 'data/observable';
+import {ObservableArray} from 'data/observable-array';
 import * as http from 'http';
-import * as observableArray from 'data/observable-array';
 
-export class MainViewModel extends observable.Observable {
+export default class MainPageModel extends Observable {
     
-    private items = new observableArray.ObservableArray<string>();
+    private items = new ObservableArray<string>();
     
     constructor() {
         super();   
@@ -26,4 +26,3 @@ export class MainViewModel extends observable.Observable {
         this.set('output', 'clear');
     }    
 }
-export var mainViewModel = new MainViewModel();
