@@ -5,10 +5,10 @@ import * as http from 'http';
 
 class MainPageModel extends Observable {
     
-    private items = new ObservableArray<string>();
+    private items = new ObservableArray<string>();;
     
     constructor() {
-        super();   
+        super();;
     }
     
     onSearch() {                

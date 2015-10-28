@@ -12,7 +12,6 @@ var MainPageModel = (function (_super) {
         _super.call(this);
         this.items = new observable_array_1.ObservableArray();
     }
-    ;
     MainPageModel.prototype.onSearch = function () {
         var _this = this;
         var searchText = this.get('searchText');
@@ -29,6 +28,8 @@ var MainPageModel = (function (_super) {
     };
     return MainPageModel;
 })(observable_1.Observable);
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = MainPageModel;
 function pageLoaded(args) {
     var page = args.object;
     page.bindingContext = new MainPageModel();
