@@ -2,9 +2,11 @@ import {Page} from 'ui/page';
 import {EventData, Observable} from 'data/observable';
 import {ObservableArray} from 'data/observable-array';
 import * as http from 'http';
+import frameModule = require("ui/frame");
+
 
 class MainPageModel extends Observable {
-    
+    private topmost = frameModule.topmost();
     private items = new ObservableArray<string>();;
     
     constructor() {
@@ -26,6 +28,10 @@ class MainPageModel extends Observable {
         this.items.splice(0);
         this.set('output', 'clear');
     }    
+    
+    moveAction(){
+        this.topmost.navigate('newPage');
+    }
 }
 
 export function pageLoaded(args: EventData) {    
