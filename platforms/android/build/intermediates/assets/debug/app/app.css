@@ -1,0 +1,26 @@
+.page {
+    background-color: #CED9BC;
+}
+
+.title {
+    font-size: 30;
+    horizontal-align: center;
+    margin:20;
+}
+
+.search{    
+    
+    background-color: #CED9BC;
+        
+}
+
+button {
+    font-size: 42;
+    horizontal-align: center;
+}
+
+.message {
+    font-size: 20;
+    color: #284848;
+    horizontal-align: center;
+}

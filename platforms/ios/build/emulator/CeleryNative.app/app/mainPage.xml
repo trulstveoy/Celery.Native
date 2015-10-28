@@ -8,6 +8,7 @@
     <Label text="{{searchText}}" cssClass="message"/>    
     
     <Label text="{{output}}" cssClass="message"/>
+    <Button text="Move!" tap="{{ moveAction }}" />
     
     <ListView items="{{items}}">
             <ListView.itemTemplate>
@@ -16,7 +17,7 @@
     </ListView>
     
     <!--<Label text="Tap the button" cssClass="message"/>
-    <Button text="TAP" tap="{{ tapAction }}" />
+    
     <Label text="{{ message }}" cssClass="message" textWrap="true"/>-->
   </StackLayout>
 </Page>

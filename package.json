@@ -1,22 +1,25 @@
 {
-  "name": "Celery.Native",
-    "version": "1.0.0",
-    "main": "./app/app.js",
-    "typings": "./dts/**/*.d.ts",
-  "nativescript": {
-    "id": "org.nativescript.Celery",
-    "tns-ios": {
-      "version": "1.4.1"
-    }
-  },
-  "dependencies": {
-    "tns-core-modules": "1.4.0"
-  },
-  "devDependencies": {
-    "del": "^2.0.2",
-    "gulp": "^3.9.0",
-    "gulp-changed": "^1.3.0",
-    "gulp-plumber": "^1.0.1",
-    "gulp-typescript": "^2.9.2"
-  }
+	"name": "Celery.Native",
+	"version": "1.0.0",
+	"main": "./app/app.js",
+	"typings": "./dts/**/*.d.ts",
+	"nativescript": {
+		"id": "org.nativescript.Celery",
+		"tns-ios": {
+			"version": "1.4.1"
+		},
+		"tns-android": {
+			"version": "1.4.0"
+		}
+	},
+	"dependencies": {
+		"tns-core-modules": "1.4.0"
+	},
+	"devDependencies": {
+		"del": "^2.0.2",
+		"gulp": "^3.9.0",
+		"gulp-changed": "^1.3.0",
+		"gulp-plumber": "^1.0.1",
+		"gulp-typescript": "^2.9.2"
+	}
 }

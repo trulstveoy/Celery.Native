@@ -6,11 +6,14 @@ var __extends = (this && this.__extends) || function (d, b) {
 var observable_1 = require('data/observable');
 var observable_array_1 = require('data/observable-array');
 var http = require('http');
+var frameModule = require("ui/frame");
 var MainPageModel = (function (_super) {
     __extends(MainPageModel, _super);
     function MainPageModel() {
         _super.call(this);
+        this.topmost = frameModule.topmost();
         this.items = new observable_array_1.ObservableArray();
+        ;
     }
     ;
     MainPageModel.prototype.onSearch = function () {
@@ -26,6 +29,9 @@ var MainPageModel = (function (_super) {
     MainPageModel.prototype.clearSearch = function () {
         this.items.splice(0);
         this.set('output', 'clear');
+    };
+    MainPageModel.prototype.moveAction = function () {
+        this.topmost.navigate('newPage');
     };
     return MainPageModel;
 })(observable_1.Observable);
