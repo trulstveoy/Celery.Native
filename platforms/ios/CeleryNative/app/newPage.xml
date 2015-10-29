@@ -1,7 +1,8 @@
-<Page xmlns="http://www.nativescript.org/tns.xsd" cssClass="page" loaded="pageLoaded">
+<Page xmlns="http://www.nativescript.org/tns.xsd" cssClass="page" 
+   navigatedTo="pageNavigatedTo">
   <StackLayout>
-    <Label text="modal" />
-    <Button tap="{{close}}" text="Close" />
+    <Label text="details" />
+    
     
   </StackLayout>
 </Page>

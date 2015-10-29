@@ -10,13 +10,18 @@ var NewPageModel = (function (_super) {
         _super.call(this);
         this.page = page;
     }
-    NewPageModel.prototype.close = function () {
-        this.page.closeModal();
-    };
     return NewPageModel;
 })(observable_1.Observable);
-function pageLoaded(args) {
+// export function pageLoaded(args: EventData) {    
+//     const page = <Page>args.object;    
+//     page.bindingContext = new NewPageModel(page);
+// }
+var model = undefined;
+function pageNavigatedTo(args) {
     var page = args.object;
-    page.bindingContext = new NewPageModel(page);
+    if (model === undefined) {
+        modl = new NewPageModel(page);
+    }
+    page.bindingContext = model;
 }
-exports.pageLoaded = pageLoaded;
+exports.pageNavigatedTo = pageNavigatedTo;

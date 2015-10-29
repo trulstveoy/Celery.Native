@@ -2,11 +2,10 @@ import {Page} from 'ui/page';
 import {EventData, Observable} from 'data/observable';
 import {ObservableArray} from 'data/observable-array';
 import * as http from 'http';
-import frameModule = require("ui/frame");
-
+import * as frame from 'ui/frame';
 
 class MainPageModel extends Observable {
-    private topmost = frameModule.topmost();
+    private topmost = frame.topmost() ;
     private items = new ObservableArray<string>();;
     private page:Page;
     
@@ -31,23 +30,16 @@ class MainPageModel extends Observable {
         this.set('output', 'clear');
     }    
     
-    moveAction(){
-        const modalPage = 'newPage';
-        this.page.showModal(modalPage, 'some text', () => {}, true);
-        
-    }
-    
-    listViewItemTap(){
-        
-        var navigationEntry = {
-            moduleName: "newPage",
-            backstackVisible: false
-        };
-        this.topmost.navigate(navigationEntry);
+    listViewItemTap(){        
+        this.topmost.navigate('newPage');
     }
 }
 
+let model:MainPageModel=undefined;
 export function pageLoaded(args: EventData) {    
-    var page = <Page>args.object;    
-    page.bindingContext = new MainPageModel(page);
+    var page = <Page>args.object;       
+    if(model === undefined){
+        model = new MainPageModel(page);
+    }
+    page.bindingContext = model;
 }

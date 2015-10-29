@@ -6,12 +6,12 @@ var __extends = (this && this.__extends) || function (d, b) {
 var observable_1 = require('data/observable');
 var observable_array_1 = require('data/observable-array');
 var http = require('http');
-var frameModule = require("ui/frame");
+var frame = require('ui/frame');
 var MainPageModel = (function (_super) {
     __extends(MainPageModel, _super);
     function MainPageModel(page) {
         _super.call(this);
-        this.topmost = frameModule.topmost();
+        this.topmost = frame.topmost();
         this.items = new observable_array_1.ObservableArray();
         this.page = page;
     }
@@ -31,20 +31,19 @@ var MainPageModel = (function (_super) {
         this.set('output', 'clear');
     };
     MainPageModel.prototype.moveAction = function () {
-        var modalPage = 'newPage';
-        this.page.showModal(modalPage, 'some text', function () { }, true);
+        this.topmost.navigate('newpage');
     };
     MainPageModel.prototype.listViewItemTap = function () {
-        var navigationEntry = {
-            moduleName: "newPage",
-            backstackVisible: false
-        };
-        this.topmost.navigate(navigationEntry);
+        this.topmost.navigate('newpage');
     };
     return MainPageModel;
 })(observable_1.Observable);
+var model = undefined;
 function pageLoaded(args) {
     var page = args.object;
-    page.bindingContext = new MainPageModel(page);
+    if (model === undefined) {
+        model = new MainPageModel(page);
+    }
+    page.bindingContext = model;
 }
 exports.pageLoaded = pageLoaded;

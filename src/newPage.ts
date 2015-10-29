@@ -10,13 +10,19 @@ class NewPageModel extends Observable {
         super();
         this.page = page;
     }
-    
-    close(){
-        this.page.closeModal();    
-    }
 }
 
-export function pageLoaded(args: EventData) {    
-    const page = <Page>args.object;    
-    page.bindingContext = new NewPageModel(page);
+// export function pageLoaded(args: EventData) {    
+//     const page = <Page>args.object;    
+//     page.bindingContext = new NewPageModel(page);
+// }
+
+let model:NewPageModel = undefined;
+export function pageNavigatedTo(args: observable.EventData) {
+    var page = <pages.Page>args.object;
+    if(model === undefined){
+        modl = new NewPageModel(page);
+    }
+    page.bindingContext = model;
 }
+
