@@ -8,9 +8,11 @@ import frameModule = require("ui/frame");
 class MainPageModel extends Observable {
     private topmost = frameModule.topmost();
     private items = new ObservableArray<string>();;
+    private page:Page;
     
-    constructor() {
-        super();;
+    constructor(page) {
+        super();
+        this.page = page;
     }
     
     onSearch() {                
@@ -30,15 +32,22 @@ class MainPageModel extends Observable {
     }    
     
     moveAction(){
-        this.topmost.navigate('newPage');
+        const modalPage = 'newPage';
+        this.page.showModal(modalPage, 'some text', () => {}, true);
+        
     }
     
     listViewItemTap(){
-        this.topmost.navigate('newPage');
+        
+        var navigationEntry = {
+            moduleName: "newPage",
+            backstackVisible: false
+        };
+        this.topmost.navigate(navigationEntry);
     }
 }
 
 export function pageLoaded(args: EventData) {    
-    var page = <Page>args.object;
-    page.bindingContext = new MainPageModel();
+    var page = <Page>args.object;    
+    page.bindingContext = new MainPageModel(page);
 }

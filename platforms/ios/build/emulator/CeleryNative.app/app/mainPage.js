@@ -9,11 +9,11 @@ var http = require('http');
 var frameModule = require("ui/frame");
 var MainPageModel = (function (_super) {
     __extends(MainPageModel, _super);
-    function MainPageModel() {
+    function MainPageModel(page) {
         _super.call(this);
         this.topmost = frameModule.topmost();
         this.items = new observable_array_1.ObservableArray();
-        ;
+        this.page = page;
     }
     ;
     MainPageModel.prototype.onSearch = function () {
@@ -31,12 +31,20 @@ var MainPageModel = (function (_super) {
         this.set('output', 'clear');
     };
     MainPageModel.prototype.moveAction = function () {
-        this.topmost.navigate('newPage');
+        var modalPage = 'newPage';
+        this.page.showModal(modalPage, 'some text', function () { }, true);
+    };
+    MainPageModel.prototype.listViewItemTap = function () {
+        var navigationEntry = {
+            moduleName: "newPage",
+            backstackVisible: false
+        };
+        this.topmost.navigate(navigationEntry);
     };
     return MainPageModel;
 })(observable_1.Observable);
 function pageLoaded(args) {
     var page = args.object;
-    page.bindingContext = new MainPageModel();
+    page.bindingContext = new MainPageModel(page);
 }
 exports.pageLoaded = pageLoaded;

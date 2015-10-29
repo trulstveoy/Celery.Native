@@ -6,13 +6,17 @@ var __extends = (this && this.__extends) || function (d, b) {
 var observable_1 = require('data/observable');
 var NewPageModel = (function (_super) {
     __extends(NewPageModel, _super);
-    function NewPageModel() {
+    function NewPageModel(page) {
         _super.call(this);
+        this.page = page;
     }
+    NewPageModel.prototype.close = function () {
+        this.page.closeModal();
+    };
     return NewPageModel;
 })(observable_1.Observable);
 function pageLoaded(args) {
     var page = args.object;
-    page.bindingContext = new NewPageModel();
+    page.bindingContext = new NewPageModel(page);
 }
 exports.pageLoaded = pageLoaded;

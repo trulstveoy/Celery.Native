@@ -10,7 +10,7 @@
     <Label text="{{output}}" cssClass="message"/>
     <Button text="Move!" tap="{{ moveAction }}" />
     
-    <ListView items="{{items}}">
+    <ListView items="{{items}}" itemTap="{{listViewItemTap}}">
             <ListView.itemTemplate>
                     <Label text="{{name}}" />
             </ListView.itemTemplate>
