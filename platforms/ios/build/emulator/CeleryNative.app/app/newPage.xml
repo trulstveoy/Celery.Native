@@ -2,6 +2,7 @@
    navigatedTo="pageNavigatedTo">
   <StackLayout>
     <Label text="details" />
+    <Label text="{{output}}" />
     
     
   </StackLayout>

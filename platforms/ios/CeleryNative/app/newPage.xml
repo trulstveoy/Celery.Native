@@ -1,8 +1,9 @@
 <Page xmlns="http://www.nativescript.org/tns.xsd" cssClass="page" 
    navigatedTo="pageNavigatedTo">
-  <StackLayout>
-    <Label text="details" />
-    
-    
-  </StackLayout>
+  <GridLayout columns="auto, *" rows="auto, *">
+    <Label col="0" row="0" text="Name" />
+    <Label col="1" row="0" text="{{name}}" />
+    <Label col="0" row="1" text="Calories" />
+    <Label col="1" row="1" text="{{calories}}" />
+  </GridLayout>
 </Page>

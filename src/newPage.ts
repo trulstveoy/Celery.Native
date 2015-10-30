@@ -10,14 +10,20 @@ class NewPageModel extends Observable {
         super();
         this.page = page;
     }
+    
+    setOutput(item:food){
+        this.set('name', item.name);
+        this.set('calories', item.calories);
+    }
 }
 
 let model:NewPageModel = undefined;
-export function pageNavigatedTo(args: observable.EventData) {
-    var page = <pages.Page>args.object;
+export function pageNavigatedTo(args: EventData) {
+    var page = <Page>args.object;
     if(model === undefined){
-        modl = new NewPageModel(page);
+        model = new NewPageModel(page);
     }
+    model.setOutput((<any>args).context);
     page.bindingContext = model;
 }
 

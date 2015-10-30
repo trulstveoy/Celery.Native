@@ -30,8 +30,13 @@ var MainPageModel = (function (_super) {
         this.items.splice(0);
         this.set('output', 'clear');
     };
-    MainPageModel.prototype.listViewItemTap = function () {
-        this.topmost.navigate('newPage');
+    MainPageModel.prototype.listViewItemTap = function (args) {
+        var item = this.items.getItem(args.index);
+        //this.set('output', item.id);        
+        this.topmost.navigate({
+            moduleName: 'newPage',
+            context: item
+        });
     };
     return MainPageModel;
 })(observable_1.Observable);

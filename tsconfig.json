@@ -6,6 +6,6 @@
     "noLib": false,
     "declaration": false,
     "sourceMap": false,
-    "isolatedModules": true
+    "isolatedModules": false
   }
 }

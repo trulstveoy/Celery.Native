@@ -6,7 +6,7 @@ import * as frame from 'ui/frame';
 
 class MainPageModel extends Observable {
     private topmost = frame.topmost() ;
-    private items = new ObservableArray<string>();;
+    private items = new ObservableArray<{id:string;name:string}>();;
     private page:Page;
     
     constructor(page) {
@@ -30,8 +30,14 @@ class MainPageModel extends Observable {
         this.set('output', 'clear');
     }    
     
-    listViewItemTap(){        
-        this.topmost.navigate('newPage');
+    listViewItemTap(args) {
+        var item = this.items.getItem(args.index);
+        //this.set('output', item.id);        
+        
+        this.topmost.navigate({
+            moduleName: 'newPage',
+            context: item
+        });
     }
 }
 

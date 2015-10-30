@@ -10,14 +10,18 @@ var NewPageModel = (function (_super) {
         _super.call(this);
         this.page = page;
     }
+    NewPageModel.prototype.setOutput = function (item) {
+        this.set('output', item.name);
+    };
     return NewPageModel;
 })(observable_1.Observable);
 var model = undefined;
 function pageNavigatedTo(args) {
     var page = args.object;
     if (model === undefined) {
-        modl = new NewPageModel(page);
+        model = new NewPageModel(page);
     }
+    model.setOutput(args.context);
     page.bindingContext = model;
 }
 exports.pageNavigatedTo = pageNavigatedTo;
