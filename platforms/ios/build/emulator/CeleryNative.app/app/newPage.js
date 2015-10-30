@@ -12,10 +12,6 @@ var NewPageModel = (function (_super) {
     }
     return NewPageModel;
 })(observable_1.Observable);
-// export function pageLoaded(args: EventData) {    
-//     const page = <Page>args.object;    
-//     page.bindingContext = new NewPageModel(page);
-// }
 var model = undefined;
 function pageNavigatedTo(args) {
     var page = args.object;

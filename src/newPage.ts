@@ -12,11 +12,6 @@ class NewPageModel extends Observable {
     }
 }
 
-// export function pageLoaded(args: EventData) {    
-//     const page = <Page>args.object;    
-//     page.bindingContext = new NewPageModel(page);
-// }
-
 let model:NewPageModel = undefined;
 export function pageNavigatedTo(args: observable.EventData) {
     var page = <pages.Page>args.object;

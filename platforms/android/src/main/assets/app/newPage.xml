@@ -1,6 +1,0 @@
-<Page xmlns="http://www.nativescript.org/tns.xsd" cssClass="page" loaded="pageLoaded">
-  <StackLayout>
-    <Label text="Hello world" />
-    
-  </StackLayout>
-</Page>

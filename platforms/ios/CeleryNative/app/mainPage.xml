@@ -8,7 +8,7 @@
     <Label text="{{searchText}}" cssClass="message"/>    
     
     <Label text="{{output}}" cssClass="message"/>
-    <!--<Button text="Move!" tap="{{ moveAction }}" />-->
+   
     
     <ListView items="{{items}}" itemTap="{{listViewItemTap}}">
             <ListView.itemTemplate>
